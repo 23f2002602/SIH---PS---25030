@@ -1,5 +1,5 @@
 # Multi-stage build for production
-FROM node:22-alpine AS frontend-build
+FROM node:22 AS frontend-build
 
 WORKDIR /app/frontend
 COPY frontend/package*.json ./
